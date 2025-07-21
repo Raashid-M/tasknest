@@ -26,7 +26,6 @@ function App() {
         <Route path="/ProjectsPage" element={<Projectspage />} />
         <Route path="/TasksPage" element={<Taskspage />} />
         {/* <Route path="/:Title" element={<Project />} /> */}
-        <Route path="*" element={<Wip />} />
       </Routes>
     </div>
   );
