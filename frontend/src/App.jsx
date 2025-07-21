@@ -5,7 +5,6 @@ import Sidebar from './components/Sidebar'
 import Dash from './Pages/Dash'
 import Projectspage from "./Pages/ProjectsPage"
 import Taskspage from "./Pages/Taskspage"
-import Wip from "./pages/Wip"
 import Project from './Pages/Project'
 import Login from './Pages/Login'
 import Signup from './Pages/Signup'
