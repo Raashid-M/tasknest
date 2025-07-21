@@ -1,6 +1,6 @@
 export async function loginUser(email, password) {
   try {
-    const response = await fetch("http://localhost:8000/tasknest/login/", {
+    const response = await fetch("https://raashid.pythonanywhere.com/tasknest/login/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

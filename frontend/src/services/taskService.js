@@ -26,7 +26,7 @@ export async function createTask(taskData) {
 
 export async function getPersonalTasks(userId) {
   try {
-    const response = await fetch(`http://localhost:8000/tasknest/tasks/personal/${userId}/`);
+    const response = await fetch(`https://raashid.pythonanywhere.com/tasknest/tasks/personal/${userId}/`);
     const data = await response.json();
     return data.personal_tasks || [];
   } catch (error) {
@@ -37,7 +37,7 @@ export async function getPersonalTasks(userId) {
 
 export async function updateTaskStatus(taskId, updatedFields) {
   try {
-    const response = await fetch(`http://localhost:8000/tasknest/tasks/update/${taskId}/`, {
+    const response = await fetch(`https://raashid.pythonanywhere.com/tasknest/tasks/update/${taskId}/`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -55,7 +55,7 @@ export async function updateTaskStatus(taskId, updatedFields) {
 
 export async function deleteTask(taskId) {
   try {
-    const response = await fetch(`http://localhost:8000/tasknest/tasks/delete/${taskId}/`, {
+    const response = await fetch(`https://raashid.pythonanywhere.com/tasknest/tasks/delete/${taskId}/`, {
       method: "DELETE",
     });
 

@@ -13,7 +13,7 @@ function Signup() {
         setError('');
 
         try {
-            const response = await fetch("http://localhost:8000/tasknest/signup/", {
+            const response = await fetch("https://raashid.pythonanywhere.com/tasknest/signup/", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
