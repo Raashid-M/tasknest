@@ -30,3 +30,7 @@ yarn-error.log
 # === OS Junk ===
 .DS_Store
 Thumbs.db
+
+git remote add origin https://github.com/Raashid-M/tasknest.git
+git branch -M main
+git push -u origin main

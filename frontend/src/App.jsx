@@ -1,19 +1,16 @@
-
-import { Route, Routes } from "react-router-dom"
-import './App.css'
-import Sidebar from './components/Sidebar'
-import Dash from './Pages/Dash'
-import Projectspage from "./Pages/ProjectsPage"
-import Taskspage from "./Pages/Taskspage"
-import Project from './Pages/Project'
-import Login from './Pages/Login'
-import Signup from './Pages/Signup'
-import { useLocation } from "react-router-dom"
+import { Route, Routes, useLocation } from "react-router-dom";
+import './App.css';
+import Sidebar from './components/Sidebar';
+import Dash from './Pages/Dash';
+import Projectspage from "./Pages/ProjectsPage";
+import Taskspage from "./Pages/Taskspage";
+import Project from './Pages/Project';
+import Login from './Pages/Login';
+import Signup from './Pages/Signup';
 
 function App() {
   const location = useLocation();
   const hideSidebar = location.pathname === "/login" || location.pathname === "/signup";
-  
 
   return (
     <div className="flex h-screen">
@@ -31,4 +28,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
