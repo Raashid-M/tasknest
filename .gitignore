@@ -1,0 +1,32 @@
+# === Python ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+
+# === Django ===
+*.sqlite3
+*.json
+*.log
+*.db
+
+# === Node ===
+node_modules/
+dist/
+build/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# === Environment Files ===
+.env
+.env.*
+
+# === VSCode ===
+.vscode/
+
+# === OS Junk ===
+.DS_Store
+Thumbs.db
