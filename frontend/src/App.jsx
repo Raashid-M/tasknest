@@ -10,7 +10,7 @@ import Signup from './Pages/Signup';
 
 function App() {
   const location = useLocation();
-  const hideSidebar = location.pathname === "/login" || location.pathname === "/signup";
+  const hideSidebar = location.pathname === "/login" || location.pathname === "/signup" || location.pathname === "/" ;
 
   return (
     <div className="flex h-screen">
