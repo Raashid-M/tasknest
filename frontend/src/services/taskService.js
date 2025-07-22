@@ -1,6 +1,6 @@
 export async function createTask(taskData) {
   try {
-    const response = await fetch("http://localhost:8000/tasknest/tasks/create/", {
+    const response = await fetch("https://raashid.pythonanywhere.com/tasknest/tasks/create/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
